@@ -1,0 +1,948 @@
+commit 6f3532c1ff6d003914592d19ef455b44e208c790
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Mar 15 02:01:01 2026 -0700
+
+    Added P5 demo and description to README.
+
+commit add85cb985cae311766461cf20838e448506e195
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Mar 15 00:08:01 2026 -0700
+
+    Changed CartServlet.java to use Redis cookies.
+
+commit b885861d823048c6cec08ff8b22911e298985007
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Mar 14 23:30:49 2026 -0700
+
+    Added Redis sessions to CartServlet.java.
+
+commit 85dcc52846e606e50c9cc074eb25172f62fdab8d
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Mar 14 22:41:23 2026 -0700
+
+    Initialize RedisUtil in LoginFilter.java.
+
+commit d00793c232625eadd40a99b69c07201b545369fd
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Mar 14 21:59:19 2026 -0700
+
+    Moved employee login/filter into login/common packages, respectively.
+
+commit 079fd47889925f249589704527ace7b413a306f1
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Mar 14 21:45:39 2026 -0700
+
+    Added missing imports to LoginFilter.java.
+
+commit ec6e575546eae1d9108c3596bc4f359b962043e5
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Mar 14 21:30:37 2026 -0700
+
+    Added sysout logging to servlets.
+
+commit 2cc36302c986b986b60a75a5b6577cc0fda043b8
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Mar 14 00:14:53 2026 -0700
+
+    Added login session state to LoginFilter.java.
+
+commit 1d0f5bc830cfda4af15ae9780420e32870585fb4
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Mar 13 20:47:13 2026 -0700
+
+    Added multi yaml files.
+
+commit bf310df850712a1c5cece1839ff2c8527d1ceccb
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Mar 13 20:28:00 2026 -0700
+
+    Added login session state to LoginServlet.java.
+
+commit 1a6fc1a84e1520339c8bbca8cc99ea754a73922b
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Mar 13 19:53:12 2026 -0700
+
+    Edited pom.xml, context.xml, and Dockerfile for redis and and multi-service.
+    Restructured src/ into packages.
+
+commit af18df798c1b2335e4beeb77defb52f71e80a751
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Mar 13 01:06:20 2026 -0700
+
+    Added DB dump.
+
+commit 4096d8c4550b3bf439903490f14d7a734eb498ed
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Mar 13 00:14:09 2026 -0700
+
+    Configured yaml files.
+    Changed resource URLs in context.xml for Kubernetes.
+
+commit 18ee354f1cfa41d0b01ceee506f97da399ecf28d
+Author: justinha <haj15@uci.edu>
+Date:   Thu Mar 12 21:48:50 2026 -0700
+
+    Added simple yaml files with Brian's docker hub username in murphy-movies.yaml
+
+commit 1cc5cfb090568c67be9a70b43e51b20794f262c4
+Author: Brian Do <briand5@uci.edu>
+Date:   Wed Mar 11 03:09:48 2026 -0700
+
+    Minor: Reverted resource URL change performed for local testing.
+
+commit f04ea8fabce8633ecc028649fd98ecfa9a7764dd
+Author: Brian Do <briand5@uci.edu>
+Date:   Wed Mar 11 02:51:09 2026 -0700
+
+    Added connection pooling to context.xml.
+    Changed DataSoruce registration in web.xml.
+
+commit 150dd6e7df9c137f346b026d815c106d496e506a
+Author: Brian Do <briand5@uci.edu>
+Date:   Wed Mar 11 02:20:13 2026 -0700
+
+    Disabled reCaptcha for employees.
+    Disabled password encryption; **do not encrypt passwords in DB**.
+
+commit ba58443b6ae52990486541faaacd3fdb8cf0b893
+Author: Brian Do <briand5@uci.edu>
+Date:   Wed Mar 11 01:12:42 2026 -0700
+
+    Added Dockerfile.
+    Changed resource URL IPs to internal Docker host in context.xml.
+
+commit 1363da1f4b57631fbc3daf3ee03bfaf350bc7799
+Author: Brian Do <briand5@uci.edu>
+Date:   Wed Mar 11 01:04:20 2026 -0700
+
+    Disabled HTTPS and reCaptcha
+
+commit 8c876b976562ba547e81bac28ac4ef446c2e91c1
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Mar 2 22:55:42 2026 -0800
+
+    Added time measurement report to README
+
+commit 42d459d0033d692500eeee77031901dfc0ed1d3b
+Author: justinha <haj15@uci.edu>
+Date:   Mon Mar 2 21:54:40 2026 -0800
+
+    Added test results for singleHTTP10 as png and txt file.
+
+commit c04a813024b887dd378836d0cbc6ec11ec0aa4c9
+Author: justinha <haj15@uci.edu>
+Date:   Mon Mar 2 17:25:44 2026 -0800
+
+    Updated README.md with new videos, added corresponding time .txt files, and screenshots from videos, and all .jmx files used for testing.
+
+commit bd3f3825f2927c05233ce8b4878a187ef506b927
+Author: justinha <haj15@uci.edu>
+Date:   Mon Mar 2 02:00:50 2026 -0800
+
+    Restored recaptcha in login files, included all screenshots and .txt files from jmeter tests, and corresponding jmeter files. Added log_processing.py to replace the java file. Restored HTTPS. All that is needed now is to fill out the .md file with averages.
+
+commit 86d425f5c51fdd83e9e96b403687cb49005cefda
+Author: justinha <haj15@uci.edu>
+Date:   Sun Mar 1 23:43:38 2026 -0800
+
+    temporarily removed HTTPS for testing.
+
+commit 1b5475692e86bf0b65c2f9caeb42a2d46095d82b
+Author: justinha <haj15@uci.edu>
+Date:   Sun Mar 1 22:47:10 2026 -0800
+
+    Changed login files in order to disable recaptcha temporarily.
+
+commit e296fb01adffc45b450b902f3c50a5972fed5a51
+Author: justinha <haj15@uci.edu>
+Date:   Sun Mar 1 21:26:54 2026 -0800
+
+    Changed FormServlet.java to create a file without the extra windows slash. Also edited context.xml to use localhost as placeholders.
+
+commit e2b3f8cd36b06741db2beb715d4567b7dfb8f5fd
+Author: justinha <haj15@uci.edu>
+Date:   Sun Mar 1 14:38:40 2026 -0800
+
+    changed context.xml to rename jdbc/moviedb to jdbc/moviedbWrite, and revered th jdbc/moviedbRead to its original name. Changed four write-servlets to reference this datasource which leads to the master instance instead.
+
+commit 49b2362dd05100cabffe4320af8655fa35fa42a3
+Merge: 8688307 334a192
+Author: justinha <haj15@uci.edu>
+Date:   Sun Mar 1 14:18:33 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+
+commit 8688307aaccf7fe3911d6a968d46d75ad68ad3d2
+Author: justinha <haj15@uci.edu>
+Date:   Sun Mar 1 14:18:25 2026 -0800
+
+    Changed context.xml to redirect jdbc/moviedb to the private ip address of the MASTER instance. Created a new resource called jdbc/moviedbRead that does the same thing but for the SLAVE instance.
+    
+    Change the private IP address back to "localhost" when performing local tests.
+
+commit 334a192554a7ac1e5d5be0e6291da8c03eaa78b4
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Feb 28 23:47:21 2026 -0800
+
+    Minor: Fixed typo in CSV file path
+
+commit 9bd56409e6a491bcd0e4d93f4076a38f7d82fd5a
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Feb 28 23:38:29 2026 -0800
+
+    Minor: Renamed JQuery folder to JMeter
+
+commit abf77f245336f7e5f0c764de2a746acff7ecb33a
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Feb 28 23:35:41 2026 -0800
+
+    Added initial JMeter test.
+
+commit 143f2240002aeffdb0f989fe9c46bd98cf7d0c69
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Feb 28 22:08:17 2026 -0800
+
+    Added TS and TJ time measurement to FormServlet.java.
+    Added log_processing.java to print average values from .csv.
+    Added report template to README.
+
+commit 5994ebf0ee72dda3fa1aabdf313272c71faf82f2
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 22 17:00:34 2026 -0800
+
+    Since pooling is already implemented most likely, changed getting connection from pool into a one liner that automatically closes the connection and the "out" for the PrintWriter for several servlets. Also updated readme with how we used Connection Pooling and PreparedStatements, and updated context.xml to cache PreparedStatements
+    
+    Note that after testing functionality remains the same. I also added a security constraint back into web.xml which was mistakenly removed in the previous commmit.
+
+commit 02c15552efa368beeaad303f50c2e17e69cfb0bf
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 22 15:02:48 2026 -0800
+
+    Correctly implements a print for the frontend to display the autocomplete results properly.
+
+commit fb80030549995614ddab7b8267a1d202eff364cb
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 22 13:15:22 2026 -0800
+
+    Implemented working autocomplete for top20.html, list.html, and index.html.
+    
+    The autocomplete works and the base searching works as well, for example, "the" will have autocomplete results and can also just be used in conjunction with other searches. Selecting an autocomplete item will lead you to the single movie page.
+
+commit 7ccac3d91a688af659bbeacf41bc50b1e6a81381
+Author: justinha <haj15@uci.edu>
+Date:   Sat Feb 21 19:22:53 2026 -0800
+
+    Replaced example code in Autocomplete.java with code (untested). Created unedited autocomplete.js from example.
+
+commit 2d64f1bfeb955af4c507bf239a1cc19e56d4181c
+Author: justinha <haj15@uci.edu>
+Date:   Sat Feb 21 16:59:20 2026 -0800
+
+    Added Autocomplete.java which is taken from example. Mostly unchanged for now. Added id="title_search" specifically for title searching in the search forms of index.html, list.html, and top20.html. Will begin to implement autocompletion.
+    
+    Also changed list.html's "search-form" to "search_form".
+
+commit 9faee820556d9bdb58b9450d0fcc6ed1525d57cd
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 15 22:49:52 2026 -0800
+
+    Added P3 demo video to README
+
+commit c98101e1794c0d3f9deb6eee67c8ec75d799d23e
+Merge: 95470f9 1e9cf57
+Author: Justin Ha <166193848+beutan1@users.noreply.github.com>
+Date:   Sun Feb 15 17:53:56 2026 -0800
+
+    Merge pull request #2 from UCI-Chenli-teaching/detached
+    
+    Changed movie insertion such that a director is required, star name i…
+
+commit 1e9cf5748d35fdc56f234b3b42a6df95c733b488
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 15 17:53:05 2026 -0800
+
+    Changed movie insertion such that a director is required, star name is required, title is required, and genre is required,
+
+commit 95470f9620969a332788a4fa936db1b35f9da35a
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Feb 14 21:38:09 2026 -0800
+
+    Added HTTPS redirection to web.xml
+
+commit fdac2ccc78489f52b6fb4aeb6c913cde4fc1ae6b
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Feb 14 21:24:34 2026 -0800
+
+    Fixed displaying empty information in single movie/star pages
+
+commit 4bc13951562b785f8609cf17bb67b36a594be1b8
+Author: justinha <haj15@uci.edu>
+Date:   Sat Feb 14 19:17:14 2026 -0800
+
+    Completed movie insertion and fixed issue with stored-procedure's id incrementing since that was broken before.
+
+commit bd570d73a381f622d3409e361ddecccfebd96a5f
+Author: justinha <haj15@uci.edu>
+Date:   Sat Feb 14 16:40:24 2026 -0800
+
+    Added working genre insertion and added logic to prevent evaluating empty inputs.
+
+commit f69b728971ff0bdbcf6592be2330cc0c48b43fd6
+Author: justinha <haj15@uci.edu>
+Date:   Sat Feb 14 16:06:51 2026 -0800
+
+    Implemented working star insertion for star insertion page with insert messages.
+
+commit e78d8a133d07bc558a269df1862f07128bf82dd8
+Author: justinha <haj15@uci.edu>
+Date:   Sat Feb 14 12:07:00 2026 -0800
+
+    Added corresponding html and js files for adding movies, stars, and genres. need to implement backend logic for adding them, using the stored-procedure.sql file.
+
+commit 78aa7e5cc6bc29b139c797b7823629266f0e1663
+Merge: 978c183 b2bebc7
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Feb 13 22:36:54 2026 -0800
+
+    Merge branch 'main' of https://github.com/UCI-Chenli-teaching/cs122b-winter-2026-baby-justin-bieber
+
+commit 978c183bc0c84e75efaf9d8104c29869ac0347cd
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Feb 13 22:32:26 2026 -0800
+
+    Minor: Updated README
+
+commit b2bebc7affa7ddd6a5712389a098017872ac1be8
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Feb 13 22:32:26 2026 -0800
+
+    Minor: Updated README
+
+commit 0fe9f940e36b28ceeef7d89d7f04247496269324
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Feb 13 22:30:09 2026 -0800
+
+    Added logic to movies list, and single movie/star pages to account for empty optinoal fields.
+
+commit 4cac2b56dce4bb2da1e11c04bd75a84c4037df40
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Feb 13 21:09:50 2026 -0800
+
+    Rewrote LoadData as BatchInsert to support inconsistency reporting.
+    Changed JOIN to LEFT JOIN in search query.
+    Fixed undefined function name in AddStarServlet.
+    Updated README.
+
+commit b423bd6aa8624913e77936506e1bbf6e03a6f0ef
+Author: justinha <haj15@uci.edu>
+Date:   Fri Feb 13 16:52:15 2026 -0800
+
+    Small: added confirmation messages for stars and genres upon insertion within stored-procedure.sql
+
+commit a4b6cd5d5cc5aa7b0b8a09a8e668a06ac808a149
+Author: justinha <haj15@uci.edu>
+Date:   Fri Feb 13 16:48:12 2026 -0800
+
+    Created some files to begin add_star page, and created a large stored-procedure.sql file with logic to create new IDs for movies, genres, and stars, and insert them into the database.
+
+commit d09ea8a3ad0ace2009c3176152dc07ebfea1dc35
+Author: justinha <haj15@uci.edu>
+Date:   Fri Feb 13 13:25:24 2026 -0800
+
+    Schema information is now properly displayed on the dashboard. TODO: add a way to add into the database.
+
+commit 3fad1fa556c2e7c72a2343f6b4f8ae6497b19b75
+Merge: 59f734a 3299619
+Author: justinha <haj15@uci.edu>
+Date:   Fri Feb 13 02:24:31 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       src/EmployeeLoginFilter.java
+    
+    Fixed some login issues and added some code to generate tables in the _dashboard (currently not working) and the login for employees, i used your code
+
+commit 59f734ac15e3f8986357e29e65196c255552fae2
+Author: justinha <haj15@uci.edu>
+Date:   Fri Feb 13 02:15:17 2026 -0800
+
+    Fixed some login issues with both customer and employee login while adding some nonfunctional code to the _dashboard page (will fix)
+
+commit 3299619736a1f22d1289a4a340bf341b25727527
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Feb 12 20:56:56 2026 -0800
+
+    Added employee password encryptor; renamed customer encryptor
+
+commit dd63b940ec5388a670cb2ff89c2135a7f6a93e6c
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Feb 12 20:35:15 2026 -0800
+
+    Implemented full text search. Currently uses existing "title" search field; may want to add separate "main" search bar
+
+commit dac3dbf36d9a6a5ad28f1198d80a96d9eb9932b7
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Feb 12 20:10:29 2026 -0800
+
+    Added FULLTEXT index and employee row to create_table.sql
+    Fixed EmployeeLoginFilter to only filter _dashboard pages; still need to verify functinoality with encrypted emplyee password
+    Updated queries in LoadData; no change in functionality
+
+commit 69470ce0a8ef5616d23687685d6b25134ca067c2
+Merge: 7b442d7 ac70b6b
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Feb 12 00:38:38 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+
+commit 7b442d78d0809f7ff927bde6c891602e1555d42b
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Feb 12 00:38:05 2026 -0800
+
+    Added LoadData.java to load .csv files. Currently loads rows with empty fields; may need to change.
+    TODO: Find a way to display bad data
+
+commit ac70b6b9272daf50c969afa677348f504aa71666
+Author: justinha <haj15@uci.edu>
+Date:   Wed Feb 11 21:02:23 2026 -0800
+
+    Separate login and filtering works for employees and customers separately.
+
+commit 0761e165ea4638bf90296b18063ed23c432ee59b
+Author: justinha <haj15@uci.edu>
+Date:   Wed Feb 11 19:41:20 2026 -0800
+
+    added or modified some existing files for the _dashboard folder. Also, redirection from logging in works properly now. Current issue is that a logged in customer can access the dashboard page without permission. Login filter needs to be changed for both existing login filter, and a new login filter for employees.
+
+commit 9da49657284a5d6f39d44d2e89296764ee4cb381
+Author: justinha <haj15@uci.edu>
+Date:   Wed Feb 11 14:17:27 2026 -0800
+
+    Added _dashboard with login page. Created new directory _dashboard with employee pages and functionality. Login filter was adjusted to allow the user to redirect themselves to the _dashboard, where new files for login were created. There is currently a login.html created and redirection doesn't work. However, the login page is accessible. create_table.sql was also created and updated to create the employees table with required columns.
+
+commit 0d5fc5ec85f9df9e1da10204bbe52185cfaf9dac
+Author: justinha <haj15@uci.edu>
+Date:   Mon Feb 9 17:07:53 2026 -0800
+
+    Added checking password vs encrypted passwords for login. Issue: specific case where if you type in your login information and press captcha with wrong information, you can correct it and try again with correct password and it errors with a code 500 POST error.
+
+commit f01f0f67d49d02e57aab549299a1db0e499e00e9
+Author: justinha <haj15@uci.edu>
+Date:   Fri Feb 6 20:11:00 2026 -0800
+
+    Modified web.xml to only use HTTPS instead of HTTP. Note to Brian: follow the project 3 part 2 guide to do this on your own local machine and AWS.
+
+commit d839fd1df3bf41876033a378440830f5d0daaf23
+Author: justinha <haj15@uci.edu>
+Date:   Fri Feb 6 14:12:35 2026 -0800
+
+    Fixed naming consistency bug with star-name, starName, and star_name. Searching for a star's name should work properly now. Use star_name to reference the html's form.
+
+commit 1079a402ac96de3c20b641ac379f883226f1c9e6
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Feb 6 03:04:17 2026 -0800
+
+    Rewrote SQL query in FormServlet.java with matching list.js. TO-DO: Disable next page button on last page; change top 20 page to use new logic
+
+commit f2c6f730b15469367fdde9ba1eaf90e28a71563f
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Feb 5 21:56:02 2026 -0800
+
+    Removed redundant functions, renamed variables for consistency
+
+commit aa101a3356be8a1b739917b492902d91088907b3
+Author: justinha <haj15@uci.edu>
+Date:   Thu Feb 5 13:02:04 2026 -0800
+
+    Added secret key back, it doesn't matter since if i set it up for myself, it should work for the both of us. also added some extra comments with logic in LoginServlet.java
+
+commit 4965a6d17badad25500e5cfec6d5795c85735d5e
+Author: justinha <haj15@uci.edu>
+Date:   Thu Feb 5 12:45:22 2026 -0800
+
+    Changed key for placeholder
+
+commit e48d1f0d046536859edba6cb491b356feecfdd6d
+Author: justinha <haj15@uci.edu>
+Date:   Wed Feb 4 18:51:38 2026 -0800
+
+    Added recaptcha functionality. Note that this works on localhost, but it only works for my own AWS instance. If you wish to test on your own, you must follow an example to add your own public ipv4 address.
+
+commit 3d178ef1ac7f12a3b6e910e2a48684449a14436c
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Feb 2 04:23:09 2026 -0800
+
+    Added demo video
+
+commit 9a3cde147f41db667e9ae4c9b992b31a35ce24fd
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Feb 2 03:36:38 2026 -0800
+
+    Revert to previous search logic
+
+commit a34b51020f7a094c38f3364f8292d1923154ff3e
+Merge: cd3c9ec 8460765
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Feb 2 02:51:39 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+
+commit cd3c9eccdf547e1db1ece54124314024513f0435
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Feb 2 02:51:28 2026 -0800
+
+    Updated Bootstrap version to 5.3.8. Added navbar to all pages. Fixed HTML titles. Standardized HTML heads and script imports.
+
+commit 84607650bb51107b85e5c617a61178cb2d1b6857
+Merge: 467febb 5439dae
+Author: justinha <haj15@uci.edu>
+Date:   Mon Feb 2 02:24:45 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+
+commit 467febb2f94437557bfc219db39e4de979ea6f39
+Author: justinha <haj15@uci.edu>
+Date:   Mon Feb 2 02:24:25 2026 -0800
+
+    Changed list page to load only necessary amount of elements per page. Previously loaded all possible matches, crashing AWS instance. Furthermore, edited pom.xml for testing purposes. Use this to build a fabflix .war file to test with.
+
+commit 5439dae37d86ac545b6a0893058f7b98e6e4f604
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Feb 2 01:20:56 2026 -0800
+
+    Added back button to single movie and star pages
+
+commit 91eef8435414f1ad9c539dac06c3d3ec952b3cb5
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Feb 2 00:03:47 2026 -0800
+
+    Added demo video to README
+
+commit 289cf16afa48ae4e40524756ff3f3df7c9d2df43
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 1 22:36:19 2026 -0800
+
+    Removed price and quantity columns to be added after database creation
+
+commit 11c1af9915402b6a65a578101c418cf0114f4469
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 1 22:25:07 2026 -0800
+
+    Changed create_table.sql to remove NOT NULL price and quantity
+
+commit fca38170853581767261b47d955346b2ad93cb32
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 1 21:56:24 2026 -0800
+
+    Added order details to confirmation page
+
+commit f3f40e0f04f7b375cd2e9a2c29692cc356e72aab
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 1 21:34:32 2026 -0800
+
+    Moved CartItem to a separate class file. Payment submission now updates database. Added payment button to cart.
+
+commit 4a81fa3e61dbfd0abf6b1982e3f08ebc2f228ff3
+Merge: c7cbe00 41905de
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 1 20:21:29 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       src/CartServlet.java
+
+commit c7cbe005d449fe5c5db509dd669170963d9dc350
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 1 20:15:35 2026 -0800
+
+    Added payment and confirmation pages. Updated create_table.sql to include movie price and sale quantity. TODO: Fix payment submission to update database; add payment button to cart
+
+commit 41905ded7db6dad560fd1d928dd1ec0f7d32dec7
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 20:13:43 2026 -0800
+
+    Updated README.md
+
+commit ce7a151dabc6a03873dcb399f10085a82219d5c4
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 19:19:15 2026 -0800
+
+    Added remove button to the shopping cart screen, clears the entry entirely and updates the price properly.
+
+commit 0d94d640881f2b43a1f1ddf0042dcec3127fcc75
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 18:45:15 2026 -0800
+
+    Added remove button to the shopping cart screen, clears the entry entirely and updates the price properly.
+
+commit e9ab089538e60f709d411c0af978144e5f282f97
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 18:42:15 2026 -0800
+
+    Both increment and decrement buttons are working. Updates the page once they are pressed, and the total cost is updated as well.
+
+commit 2850cf65f96ba2629803c99d0d21e41db229d450
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 18:18:27 2026 -0800
+
+    Added an associated actionType to the jQuery when a button is clicked for adding a movie. This means that the current code for doPost can also handle cases where the user wants to subtract movies.
+
+commit b38bef0ade6575d77e7d17674610ffd597726b2b
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 17:16:01 2026 -0800
+
+    Total price is properly displaying and being calculated. Adding movies from different pages works for this.
+
+commit f0f3e81e6957e90b79042dc34a5a441e934d5951
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 17:04:08 2026 -0800
+
+    Button functionality has been added to the top 20 page, the single movie page, and the search result (list) page. All of these show up properly on the shopping cart page.
+
+commit 1c590fab3fac0c566e09330de9d15f8e3317335a
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 16:29:10 2026 -0800
+
+    Incrementing is now possible and displays proper multiplication and quantity of each item. Need to add functional buttons to all movie pages.
+
+commit e77ab84e7c6462fe5336bec375d55d15a4ee9662
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 15:38:02 2026 -0800
+
+    Buttons are confirmed to be working, sending information to the cart which is received. TODO: Display information properly. Also, use passed movie ID to link to single movie pages.
+
+commit 403f24e6a2dd379636c6551b029a5c2d3539e5ff
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 14:56:17 2026 -0800
+
+    Added buttons to the top 20 page, attempted to bind them with the cart API (doesn't seem to be currently working, or at least displaying on the cart page). also changed MoviesServlet.java to accomodate the new page column that was added to the database.
+
+commit deed79e5e1b5ac442616091b24d3e20dab63d195
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 13:29:04 2026 -0800
+
+    Added Cart column to all HTML pages where there is a button to add each movie to cart. Each button doesn't do anything yet.
+
+commit 07b4c61f01cf96727f33f6a53b776e7661ea95c4
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Feb 1 02:32:50 2026 -0800
+
+    Added more secondary sorting options to Movies List
+
+commit 03f4a9f48b490a60720ba352fa5c10a54a63cf46
+Author: justinha <haj15@uci.edu>
+Date:   Sun Feb 1 01:54:03 2026 -0800
+
+    Created new files for the shopping cart. Shopping cart functionality has not been implemented but the shopping cart should be reachable from all other html pages besides the login page. TODO: use sessions to update the shopping cart. Furthermore you might also have to add buttons for every movie entry on all pages to add them to cart, which then gets handled in the shopping cart screen.
+
+commit 09e897306615242a02ae0148a87dfe4dde052640
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 19:54:11 2026 -0800
+
+    Single star page now sorts by descending movie year, and tiebreaks on the title of the movie (ASC).
+
+commit e96c918676a76fb3d4885c69203d8621f3045199
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 19:48:03 2026 -0800
+
+    Top 20 page now has first 3 genres and first 3 stars by # of starred movies
+
+commit c7712ea7b523a989f4a326d4a4865b28f2dbaf33
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 19:42:00 2026 -0800
+
+    Single Movie page has stars ordered by # of starred movies, and tiebreaker is alphabetical order names.
+
+commit 6bd42cf34b3d1c67dfd1bbb4d313883e15c80bc3
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 19:32:26 2026 -0800
+
+    Added hyperlink to top 20 pages to all current HTML pages besides login and the top 20 page itself.
+
+commit 74627d83ac088400d05eb66a5b73f985f1ef1554
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 19:06:11 2026 -0800
+
+    Added hyperlinked genres into list.js, limited by 3.
+
+commit 5312d7cc1ef4e2d3c46fc99661a2e5aa9a62bfa1
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 18:56:41 2026 -0800
+
+    Added hyperlinked genres into single-movie.js to allow for genres to lead to list.html using the genre as a search item.
+
+commit 9a7beb7c52dc8f013029f525a0ca46ab151b1ebd
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 18:22:44 2026 -0800
+
+    Fixed genre-searching. Previously, genre-searching would only find a match, if for example, selecting drama, a movie was ONLY a drama. Now, it also selects a row if only one genre matches (the one that is selected).
+
+commit f42b5c4c7b5f8ff53ae39f23421539eb9674b423
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 18:06:06 2026 -0800
+
+    Updated README.md to include my work
+
+commit 220bb237eeab21a4e188687578bac7f4d7202156
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 18:04:28 2026 -0800
+
+    Updated README.md to include where the LIKE keyword was used in SQL queries in FormServlet.java
+
+commit fed8aa8cdd9d45404395d4ae45fbe6eff9e0bddd
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 17:57:20 2026 -0800
+
+    Added number searching for movies on index.html and also added some line breaks to make the selections more readable.
+
+commit e3ac2a4f1a1ddb506fc282c208f2851038008179
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 15:43:17 2026 -0800
+
+    Added "*" selection to the main menu where non-alphabetical start-characters are displayed.
+
+commit 51d4a48eeb6e55ccbf45de40e10675fb4f0b0117
+Merge: 40feec0 d026e91
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 15:00:11 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       WebContent/list.js
+
+commit 40feec0671500ed4bd39a72eac53ebb65b5bb524
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 14:59:05 2026 -0800
+
+    Removed one of the TODOs, also checking if im on the main branch
+
+commit d026e91f72891e6deae318290a71de41cd4b860c
+Merge: 6deae74 54f4187
+Author: Justin Ha <166193848+beutan1@users.noreply.github.com>
+Date:   Sat Jan 31 14:52:26 2026 -0800
+
+    Merge pull request #1 from UCI-Chenli-teaching/detached
+    
+    Moved next and prev page functionality to be inside of handleMovieRes…
+
+commit 54f41875deadbf2c13d8181ba861b2aab56ae61f
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 14:51:06 2026 -0800
+
+    Moved next and prev page functionality to be inside of handleMovieResult due to the fact that it relies on information that has to be retreived through ajax which is asynchronous. Uses information from dropdown selection to determine when to disable the next button.
+
+commit 6deae74f8c7108c883bb2cbc84563a199ca03d17
+Merge: 86261ae a34b129
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Jan 31 02:57:53 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       src/FormServlet.java
+
+commit 86261ae7c0acba0e2ca0a6a7cfbfb4ba88c80bac
+Author: Brian Do <briand5@uci.edu>
+Date:   Sat Jan 31 02:49:31 2026 -0800
+
+    Added sorting and pagination to list.html, list.js, and FormServlet.java
+
+commit a34b129fb61238717c212ff469dcdd77a0521d22
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 31 02:27:01 2026 -0800
+
+    Changes were made to mainly FormServlet.javato add hyperlink functionality for searching by first letter of title. index.html and index.js were slightly modified to add this, and most of the bugs that were encountered was using m instead of movies in the innerQuery string. After fixing the bug, this seems to be working for all letters. There may not be a necessity for some branches for generating the innerQuery, but it is totally functional. Now, we need to implement pagination as well as some form or sorting which can easily be embedded into the FormServlet.java's SQL query generation.
+
+commit 6e854ead7ca258e7f2812f2b9b08086e8b840415
+Author: justinha <haj15@uci.edu>
+Date:   Fri Jan 30 22:31:08 2026 -0800
+
+    Genre searching is now functional. Alphabetical search has not been tested, links need to be added.
+
+commit 8d18238bd78c322ba1bb052bea6a80a3340ca5e0
+Author: justinha <haj15@uci.edu>
+Date:   Fri Jan 30 22:20:19 2026 -0800
+
+    Homepage/index.html now has some links for searching by genre. Currently, genre searching doesn't work due to an issue with accessing genre id within FormServlet.java. However, regular searching through form is still functional.
+
+commit feef682dd65daa98620436a1c9abf64c78480a88
+Author: justinha <haj15@uci.edu>
+Date:   Fri Jan 30 21:06:11 2026 -0800
+
+    Modified existing index.html and index.js to begin functioning with genre & alphebetical search by title. Added another servlet HomeServlet.java to modify this page. Not done yet, but files are created, and old index files are renamed to top20 to be accessed through a hyperlink.
+
+commit 740dd5d7a3985d9d040cf3728cb4a33aca2dd8cb
+Author: justinha <haj15@uci.edu>
+Date:   Fri Jan 30 19:45:31 2026 -0800
+
+    Implemented proper HTML/CSS for displaying search results properly. You can also search again from the results page. Major changes work from new files list.html and list.js which have logic derivative of index.js and login.js utilizing the data parameter in jQuery to communicate with FormServlet, which was one of the many bugs preventing an html from displaying.
+
+commit 205362058d74d2eb27513b5bab102d6f65ccd07c
+Author: justinha <haj15@uci.edu>
+Date:   Thu Jan 29 15:47:41 2026 -0800
+
+    Used PreparedStatement instead of Statement to protect against SQL injection, changing the code and storing & adding parameters into the query after generating it.
+
+commit 24f61a21b00509dc8d65f50102deb319ac613c5f
+Author: justinha <haj15@uci.edu>
+Date:   Mon Jan 26 17:07:30 2026 -0800
+
+    Updated README.md
+
+commit 1d78316ed6d88c15607093c5e4138f1b7a0c15be
+Author: justinha <haj15@uci.edu>
+Date:   Mon Jan 26 17:02:13 2026 -0800
+
+    Added searching functionality with intersections. The user can search from index.html using keywords. Currently the results page does not have any hyperlinks or CSS or any kind of styling. Figure out how to fix this problem (likely try to use index.html)
+
+commit a687e4b878f5cecf18a0f02dfc272b7ae8717e6e
+Author: justinha <haj15@uci.edu>
+Date:   Mon Jan 26 15:18:57 2026 -0800
+
+    Added forms for searching for categories Title Year Director and Star Name. Created style.css and used it to darken site and add minimal aesthetic changes. All html pages in this project use style.css now, and LoginFilter.java was made to allow this for the login screen.
+
+commit 5a7a74b679dcec10173af9e808fd4e4130ba9549
+Author: justinha <haj15@uci.edu>
+Date:   Sun Jan 25 22:58:18 2026 -0800
+
+    Added basic login functionality to work with the database customers table in LoginServlet.java. Username and password combination has to exist to work, otherwise it won't log you in. Filtering should be functional too. Currently no functionality to tell you if the username exists or not but that shouldn't be a hard fix.
+
+commit 44ac4efc7f9f39f2f65c77b68dc247b82f43faba
+Merge: ea2f51b b7041a6
+Author: justinha <haj15@uci.edu>
+Date:   Sun Jan 25 13:54:48 2026 -0800
+
+    Merge remote-tracking branch 'origin/main'
+
+commit ea2f51b6aacb68421657ca843c6807fbd3965603
+Author: justinha <haj15@uci.edu>
+Date:   Sun Jan 25 13:51:45 2026 -0800
+
+    Added basic login files from the given class example. Designed to work with temporary username/password pair: anteater 123456. To be changed to work with different usernames and passwords if necessary.
+
+commit b7041a694476a60bcd3f0f5d988d94e03f0d20a3
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Jan 18 23:30:27 2026 -0800
+
+    Removed .idea from repo
+
+commit 29cca3db8705b955c2631072acd706a9f1b663c2
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Jan 18 23:27:06 2026 -0800
+
+    Fixed .gitignore
+
+commit d6c0dd407cca960913f0b6369e8a447ec5b52d16
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Jan 18 23:13:22 2026 -0800
+
+    Added demo video and contributions to readme
+
+commit 09c0058369caa33c88c0fffc3322cad3027635e0
+Author: Brian Do <briand5@uci.edu>
+Date:   Sun Jan 18 21:39:16 2026 -0800
+
+    Changed .sql files for demo
+
+commit c4550682c013fb41eb5de0355767d0beec6fb9e2
+Author: justinha <haj15@uci.edu>
+Date:   Sun Jan 18 16:12:59 2026 -0800
+
+    Homepage functionality for all subpages. Clicking on "FabFlix" on the top of those pages will take you back. Also changed the header on index.html for aesthetic purposes.
+
+commit 96954ee022071750a82c1c3de177cac0eecad010
+Author: justinha <haj15@uci.edu>
+Date:   Sun Jan 18 16:06:51 2026 -0800
+
+    Added functional single-star page that displays their starred-in movie information with hyperlinks that take you to those movies. Date of birth & N/A functionality for that is working too. Need to add the functionality to reach index.html aka home page from all pages.
+
+commit 14b148d0b5ac35f3357a9762d31c7c8c476b37c3
+Author: justinha <haj15@uci.edu>
+Date:   Sun Jan 18 15:13:11 2026 -0800
+
+    Added hyperlink functionality for the Single Movie pages to allow star pages to be accessed. Started working on displaying star page information.
+
+commit e18628c1098425d5aa71b3bf2050310ed9e7fb16
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 17 23:29:23 2026 -0800
+
+    Removed redundant movie title column in single-movie.js and single-movie.html
+
+commit aafa69f25b7028f3b9c7c9f13d655137f5a90c77
+Author: justinha <haj15@uci.edu>
+Date:   Sat Jan 17 22:54:34 2026 -0800
+
+    Changed mySQL query in MoviesServlet.java to create more rows such that each movie's stars get their own row. Then, in index.js, individual links are now created for the stars.
+    
+    To do:
+    Single movie page:
+    Replace the mySQL to be nearly identical for SingleMovieServlet.java. That will get the links working there. Then, create some "back" method to go back to main menu.
+    Single star page:
+    Get the text to display properly and show the movies per star with links to those individual movies (should be quite similar)
+
+commit 39ad6981fcaf43362c8ab0e304d4fa73ba2383ff
+Author: justinha <haj15@uci.edu>
+Date:   Fri Jan 16 22:28:12 2026 -0800
+
+    Corrected an undefined variable in single-movie.js and added extra lines to display all genres, stars, and the rating for an individual movie.
+    
+    Single movie pages should now be operational
+
+commit c7005d8f1b52f98a1a2324015f70d3b165b12042
+Author: justinha <haj15@uci.edu>
+Date:   Fri Jan 16 22:14:38 2026 -0800
+
+    Created new files for single-movie pages. html and js files of those are modified versions of single-star files. Currently, proper links are being created to the individual movies, however the actual details are not showing up yet. Movie title is properly displaying though.
+    
+    Need to make backlinks to the home page(top 20) and any changes to index.js and index.html are small renaming changes.
+
+commit 70dea0283eec39ee1df86ef77203db66ed0a8f73
+Author: justinha <haj15@uci.edu>
+Date:   Fri Jan 16 19:39:22 2026 -0800
+
+    renamed api/stars and other star names to movies in corresponding files (index.html, index.js, MoviesServlet.java). Created SingleMovieServlet.java to be used for links into a single movie.
+
+commit ec99907e937eb79efe1d6261d76f5dd82ab81c1b
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Jan 15 22:12:09 2026 -0800
+
+    Changed genres and stars to display top three, alphabetically.
+
+commit 70640647b969f88a290ffeef6b039bfb84dffa45
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Jan 15 21:39:30 2026 -0800
+
+    Changed StarsServlet.java, index.js, and index.html to display movie information.
+
+commit 8ac4c1f84c557760186c125d72639c350b6770a8
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Jan 15 21:12:49 2026 -0800
+
+    Changed query on StarsServlet.java
+
+commit 50166b002b718c67b0fd028fc3233312df84b529
+Author: justinha <haj15@uci.edu>
+Date:   Thu Jan 15 20:49:22 2026 -0800
+
+    Changed content.xml & StarsServlet.java to change the datasource from moviedbexample to moviedb
+
+commit 23d28c200a4ea3269ac78fafcc3ade3e70edc280
+Author: Brian Do <briand5@uci.edu>
+Date:   Thu Jan 15 19:55:58 2026 -0800
+
+    Added starter code
+
+commit 401913dc28744c5721aa1ee12a8eebb661d4b248
+Author: Brian Do <briand5@uci.edu>
+Date:   Mon Jan 12 19:02:37 2026 -0800
+
+    Added createtable.sql
+
+commit 7d8348f76e91be85bc5ea5e84286eedf0287f222
+Author: Brian Do <briand5@uci.edu>
+Date:   Fri Jan 9 15:40:19 2026 -0800
+
+    Add movie-data.sql​​
